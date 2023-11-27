@@ -30,8 +30,7 @@ y[0]=y0;
 u=u0;
 v=v0;
 
-for i in range(1,365*L):    
-    print(i)
+for i in range(1,365*L):
     x[i]=x[i-1]+day*u;
     y[i]=y[i-1]+day*v;
     ax=-G*M/(abs(x[i]**2+y[i]**2)**[3/2])*x[i];
